@@ -1,5 +1,5 @@
 IP: 84.201.154.3;
 name_taski: https://ryaykkenen.hopto.org/;
 name_kittygram: https://ryaykkenen.ru/;
-login: dramn;
+login: dramn(dramshtadiy for taski);
 password: 4Kl90dam007228; 

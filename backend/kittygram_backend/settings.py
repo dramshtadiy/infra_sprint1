@@ -10,7 +10,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['84.201.154.3', '127.0.0.1', 'localhost', 'ryaykkenen.ru']
+ip = os.getenv('IP')
+ALLOWED_HOSTS = ip.split(',') if ip is not None else []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -96,7 +97,7 @@ USE_TZ = True
 STATIC_URL = 'static_backend'
 STATIC_ROOT = BASE_DIR / 'static_backend' 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / '/var/www/kittygram/static/media'
+MEDIA_ROOT = '/var/www/kittygram/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
